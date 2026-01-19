@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.top_right {
+  position: fixed;
+  top: 14px;
+  right: 24px;
+  z-index: 9999;
+}
+
+.top_right ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.top_right li {
+  margin: 0;
+}
+
+.top_right a {
+  color: #1a7ad1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+
+img {
+   width:100%;
+}
+
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.h2txt {
+   font-size:24px;
+   color:#fe980f;
+   text-align:center;
+   font-weight:bold;
+   padding:20px 0;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* detail css */
+
+.detail .price {
+   font-size:30px;
+   color: #ff0038;
+}
+.detail .won {
+   font-size:16px;
+}
+.detail .minus,
+.detail .plus {
+   width:26px;
+}
+.detail .quantity {
+   width:30px;
+   text-align:center;
+}
+.detail .price {
+   color: #ff0038;
+   font-size:30px;
+}
+.detail .btn-price .btn-cart {
+   display:inline-block;
+   border:1px solid #ff0038;
+   color:#ff0038;
+   font-size:18px;
+   background:#fff;
+   padding:16px 20px;
+   
+}
+.detail .btn-price .btn-buy {
+   display:inline-block;
+   border:1px solid #ff0038;
+   color:#fff;
+   font-size:18px;
+   background:#ff0038;
+   padding:16px 20px;
+}
+
+.detail-wrap {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+}
+.detail-wrap .thumnail {
+   display:inline-block;
+   width:52px;
+   height:52px;
+   border-radius:50%;
+   background:#f00;
+   background:url(../images/profile_10.png) center center;
+   background-size:cover;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
+}
+
+.detail-wrap .state {
+   display: inline-block;
+    width: 51px;
+    height: 21px;
+    text-align: center;
+    margin-right: 10px;
+    background: #e1e6f8;
+    border: 1px solid #0b83e6;
+    color: #0b83e6;
+    font-size: 12px;
+}
+
+h4.tit {
+    margin: 40px 0 20px;
+    color: #111;
+    font-size: 22px;
+}
+
