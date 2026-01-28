@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	background: #f7f7f7;
+	font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic",
+		"Meiryo", "Segoe UI", Arial, sans-serif;
+}
+
+.header {
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	padding: 0 40px;
+	display: flex;
+	align-items: center;
+	height: 64px;
+}
+
+.header .logo {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #1a7ad1;
+	text-decoration: none;
+}
+
+.header nav {
+	margin-left: auto;
+}
+
+.header nav a {
+	margin: 0 16px;
+	color: #1a7ad1;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.main-visual {
+	background: #e9f5ff;
+	padding: 60px 0;
+	text-align: center;
+}
+
+.main-visual h1 {
+	font-size: 2.5em;
+	margin-bottom: 16px;
+	color: #1a7ad1;
+}
+
+.main-visual p {
+	font-size: 1.2em;
+	color: #555;
+}
+
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 32px;
+	margin: 40px 0;
+}
+
+.card {
+	background: #fff;
+	border-radius: 16px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+	width: 320px;
+	overflow: hidden;
+	transition: box-shadow .2s;
+}
+
+.card:hover {
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+	width: 100%;
+	height: 180px;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 24px;
+}
+
+.card-content h2 {
+	margin: 0 0 12px 0;
+	font-size: 1.2em;
+	color: #222;
+}
+
+.card-content p {
+	margin: 0;
+	color: #666;
+	font-size: 1em;
+}
+
+.footer {
+	background: #222;
+	color: #f5f7fa;
+	text-align: center;
+	padding: 36px 0 24px 0;
+	font-size: 1em;
+	margin-top: 40px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.footer a {
+	color: #f5f7fa !important;
+	text-decoration: none;
+	font-size: 1em;
+}
+
+.footer a:hover {
+	color: #fff !important;
+}
+
+.header .logo {
+	color: #222 !important;
+}
+
+.header nav a {
+	color: #222 !important;
+}
+
+.league-team-label {
+	color: #fff !important;
+	font-weight: 700;
+	background: #f5f7fa;
+	border-radius: 20px;
+	padding: 10px 24px;
+	font-size: 1.12em;
+	margin-left: 4px;
+	display: flex;
+	align-items: center;
+}
+
+.carousel-img {
+	width: 100%;
+	height: 260px; /* ← 여기서 원하는 높이 */
+	object-fit: cover; /* 비율 유지하면서 잘라서 채움 */
+	border-radius: 12px; /* 선택 */
+} /* 응원하는 팀 버튼 프로필 이미지 스타일 개선 */
+.team-profile-img {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	object-fit: cover;
+	background: #eee;
+	margin-right: 10px;
+	border: none;
+} /* 다른 리그 팀 버튼 프로필 이미지 스타일 개선 */
+.league-profile-img-large {
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #e0e0e0;
+	background: #fff;
+}
+
+.league-profile-img-small {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #fff;
+	position: absolute;
+	right: -6px;
+	bottom: -6px;
+	background: #fff;
+}
+
+.league-team-btn {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	background: #fff;
+	border: 2px solid #d0e3fa;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+	border-radius: 32px;
+	padding: 10px 28px 10px 10px;
+	cursor: pointer;
+	transition: box-shadow .2s;
+}
+
+.league-team-btn span {
+	color: #fff !important;
+}
+
+/* 다른 리그의 팀 영역(두번째 section)만 검정색 글씨로 오버라이드 */
+#mainContent > div:nth-of-type(3) .league-team-label,
+#mainContent > div:nth-of-type(3) .league-team-btn span {
+	color: #222 !important;
+}
+
+.top_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 18px 32px 0 0;
+	z-index: 100;
+}
+
+.top_right ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 12px;
+}
+
+.top_right li {
+	display: inline-block;
+}
+
+.top_right a {
+	color: #222 !important;
+	font-weight: 500;
+	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic',
+		'Meiryo', 'Segoe UI', Arial, sans-serif;
+	text-decoration: none;
+	padding: 6px 16px;
+	border-radius: 16px;
+	background: #fff;
+	border: 1.5px solid #d0e3fa;
+	transition: background 0.2s;
+}
+
+.top_right a:hover {
+	background: #e9f5ff;
+}

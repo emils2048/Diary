@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	background: #f7f7f7;
+	font-family: "Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo","Segoe UI",Arial,sans-serif;
+}
+
+.header {
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	padding: 0 40px;
+	display: flex;
+	align-items: center;
+	height: 64px;
+}
+
+.logo {
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #222;
+	text-decoration: none;
+}
+
+.menu-btn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin-right: 18px;
+}
+
+.menu-icon {
+	width: 28px;
+	height: 22px;
+	position: relative;
+	display: block;
+}
+
+.menu-icon span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #222;
+	border-radius: 2px;
+}
+
+.menu-icon span:nth-child(1) { top: 0; }
+.menu-icon span:nth-child(2) { top: 9px; }
+.menu-icon span:nth-child(3) { top: 18px; }
+
+.top_right {
+	position: absolute;
+	top: 18px;
+	right: 32px;
+	z-index: 100;
+}
+
+.top_right ul {
+	list-style: none;
+	display: flex;
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.top_right a {
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	padding: 6px 16px;
+	border-radius: 16px;
+	background: #fff;
+	border: 1.5px solid #d0e3fa;
+}
+
+.top_right a:hover {
+	background: #e9f5ff;
+	color: #fff;
+}
+
+.top_right a,
+.top_right a:link,
+.top_right a:visited,
+.top_right a:hover,
+.top_right a:active {
+	color: #fff !important;
+}
